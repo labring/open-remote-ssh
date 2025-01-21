@@ -1,8 +1,11 @@
+> Base on [Open Remote - SSH v0.0.48](https://github.com/jeanp413/open-remote-ssh).
+
 # Open Remote - SSH
 
 ![Open Remote SSH](https://raw.githubusercontent.com/jeanp413/open-remote-ssh/master/docs/images/open-remote-ssh.gif)
 
 ## SSH Host Requirements
+
 You can connect to a running SSH server on the following platforms.
 
 **Supported**:
@@ -23,17 +26,17 @@ You can connect to a running SSH server on the following platforms.
 
 Enable the extension in your `argv.json`
 
-
 ```json
 {
     ...
     "enable-proposed-api": [
         ...,
-        "jeanp413.open-remote-ssh",
+        "labring.open-remote-ssh-for-trae",
     ]
     ...
 }
 ```
+
 which you can open by running the `Preferences: Configure Runtime Arguments` command.
 The file is located in `~/.vscode-oss/argv.json`.
 
@@ -41,6 +44,7 @@ The file is located in `~/.vscode-oss/argv.json`.
 
 When running on alpine linux, the packages `libstdc++` and `bash` are necessary and can be installed via
 running
+
 ```bash
 sudo apk add bash libstdc++
 ```
