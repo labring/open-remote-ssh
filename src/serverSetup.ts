@@ -39,6 +39,7 @@ const DEFAULT_DOWNLOAD_URL_TEMPLATE = 'https://github.com/VSCodium/vscodium/rele
 
 const VERSION_RELEASE_MAP: { [key: string]: string } = {
     '1.95.3': '24321',
+    '1.96.4': '25026',
 };
 
 export async function installCodeServer(conn: SSHConnection, serverDownloadUrlTemplate: string | undefined, extensionIds: string[], envVariables: string[], platform: string | undefined, useSocketPath: boolean, logger: Log): Promise<ServerInstallResult> {
